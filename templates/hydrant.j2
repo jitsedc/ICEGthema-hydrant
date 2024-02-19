@@ -1,0 +1,332 @@
+{% extends "iceg_hydrants_ap.j2" %}
+
+{% block summary %}
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">English</a></li>
+    <li><a href="#tabs-2">French</a></li>
+    <li><a href="#tabs-3">Dutch</a></li>
+	<li><a href="#tabs-4">German</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>The model presented below is an application profile of the theme ‘Hydrants’, built in the context of the ICEG thematic working group, regrouping experts from the federal and regional level as well as communities. The model was designed through a series of workshops and a final open consultation.</p>
+	<p>The objective was to standardize the terms defined for hydrants at regional and federal level, starting from the stakeholders' requirements, and relying on OSLO and SAREF. It serves the purpose to make data accessible as linked open data and to define standard interfaces (APIs) to simplify interprovincial and interregional collaboration and integration of the various services and tools.</p>
+	<p>The Hydrant Vocabulary is designed to support the exchange of basic information about hydrants. Using the vocabulary will make it easier for institutions to publish data concerning this theme.</p>
+  </div>
+  <div id="tabs-2">
+    <p>TBC</p>
+  </div>
+  <div id="tabs-3">
+    <p>TBC</p>
+  </div>
+   <div id="tabs-4">
+    <p>TBC</p>
+  </div>
+</div>
+ 
+<br><br>
+<p>Namespaces:</p>
+
+    <table id="table-namespaces" class="simple">
+      <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace IRI</th>
+        <th>Source</th>
+      </tr>
+      </thead>
+      <tbody>
+	   <tr>
+        <td><code>adms</code></td>
+        <td><code>http://www.w3.org/ns/adms#</code></td>
+        <td>[[VOCAB-ADMS]]</td>
+      </tr>
+	  <tr>
+        <td><code>building</code></td>
+        <td><code>http://vocab.belgif.be/ns/building#</code></td>
+        <td>[[VOCAB-BUILDING]]</td>
+      </tr>
+	  <tr>
+        <td><code>cv</code></td>
+        <td><code>http://data.europa.eu/m8g/</code></td>
+        <td>[[Core Vocabularies]]</td>
+      </tr>
+	   <tr>
+        <td><code>dcterms</code></td>
+        <td><code>http://purl.org/dc/terms/</code></td>
+        <td>[[DCTERMS]]</td>
+      </tr>
+	  	  <tr>
+        <td><code>hydrants</code></td>
+        <td><code>http://vocab.belgif.be/ns/hydrants#</code></td>
+        <td>[[VOCAB-HYDRANTS]]</td>
+      </tr>
+	  <tr>
+        <td><code>locn</code></td>
+        <td><code>http://www.w3.org/ns/locn#</code></td>
+        <td>[[LOCN]]</td>
+      </tr>
+	  <tr>
+        <td><code>org</code></td>
+        <td><code>http://www.w3.org/ns/org#</code></td>
+        <td>[[ORG]]</td>
+      </tr>
+	  <tr>
+        <td><code>qudt</code></td>
+        <td><code>https://qudt.org/schema/qudt/</code></td>
+        <td>[[QUDT]]</td>
+      </tr>
+      <tr>
+        <td><code>rdf</code></td>
+        <td><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></td>
+        <td>[[RDF-SYNTAX-GRAMMAR]]</td>
+      </tr>
+      <tr>
+        <td><code>rdfs</code></td>
+        <td><code>http://www.w3.org/2000/01/rdf-schema#</code></td>
+        <td>[[RDF-SCHEMA]]</td>
+      </tr>
+      <tr>
+        <td><code>saref4water</code></td>
+        <td><code>https://saref.etsi.org/saref4watr/</code></td>
+        <td>[[SAREF 4 WATER]]</td>
+      </tr>
+	  <tr>
+        <td><code>skos</code></td>
+        <td><code>http://www.w3.org/2004/02/skos/core#</code></td>
+        <td>[[SKOS-CORE]]</td>
+      </tr>
+      <tr>
+        <td><code>xsd</code></td>
+        <td><code>http://www.w3.org/2001/XMLSchema#</code></td>
+        <td>[[XMLSCHEMA11-2]]</td>
+      </tr>
+      </tbody>
+    </table>
+</p>
+</p>
+{% endblock %}
+
+{% block license %}
+<p>This specification of <a href=”https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic”>SEMIC</a> is published under “<a href=”https://joinup.ec.europa.eu/licence/isa-open-metadata-licence-v11”ISA Open Metadata Licence 1.1</a>”.</p>
+{% endblock %}
+
+{% block changelog %}
+<p>
+No changelog defined.
+<p>
+{% endblock %}
+
+
+{% block codelist %}
+<div class="region region--no-space-top">
+	<h3 class="h3" id="HydrantType">Hydrant Type</h3>
+	<dl>
+		<dt>PREFIX vbht:</dt>
+		<dd>http://vocab.belgif.be/auth/hydranttype/</dd>
+	</dl>
+	<br/>
+	<h4>SKOS TopConcepts</h4>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>URI</th>
+				<th>skos:prefLabel@en</th>
+				<th>skos:notation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>vbht:abovegroundHydrant</td>
+				<td>above ground hydrant</td>
+				<td>abovegroundHydrant</td>
+			</tr>
+			<tr>
+				<td>vbht:risingPoint</td>
+				<td>rising point</td>
+				<td>risingPoint</td>
+			</tr>
+			<tr>
+				<td>vbht:undergroundHydrant</td>
+				<td>under ground hydrant</td>
+				<td>undergroundHydrant</td>
+			</tr>
+			<tr>
+				<td>vbht:wall-monuntedHydrant</td>
+				<td>wall mounted hydrant</td>
+				<td>wall-monuntedHydrant</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="region region--no-space-top">
+	<h3 class="h3" id="NameStatusType">NameStatusType</h3>
+	<dl>
+		<dt>PREFIX vbnst:</dt>
+		<dd>http://vocab.belgif.be/auth/namestatustype/</dd>
+	</dl>
+	<br/>
+	<h4>SKOS TopConcepts</h4>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>URI</th>
+				<th>skos:prefLabel@en</th>
+				<th>skos:notation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>vbnst:historical</td>
+				<td>historical</td>
+				<td>historical</td>
+			</tr>
+			<tr>
+				<td>vbnst:official</td>
+				<td>official</td>
+				<td>official</td>
+			</tr>
+			<tr>
+				<td>vbnst:other</td>
+				<td>other</td>
+				<td>otherl</td>
+			</tr>
+			<tr>
+				<td>vbnst:standardised</td>
+				<td>standardised</td>
+				<td>standardised</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="region region--no-space-top">
+	<h3 class="h3" id="NativenessValue">NativenessValue</h3>
+	<dl>
+		<dt>PREFIX vbnv:</dt>
+		<dd>http://vocab.belgif.be/auth/nativenessvalue/</dd>
+	</dl>
+	<br/>
+	<h4>SKOS TopConcepts</h4>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>URI</th>
+				<th>skos:prefLabel@en</th>
+				<th>skos:notation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>vbnv:endonym</td>
+				<td>endonym</td>
+				<td>endonym</td>
+			</tr>
+			<tr>
+				<td>vbnv:exonym</td>
+				<td>exonym</td>
+				<td>exonym</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="region region--no-space-top">
+	<h3 class="h3" id="OpeningKeyType">OpeningKeyType</h3>
+	<dl>
+		<dt>PREFIX vbokt:</dt>
+		<dd>http://vocab.belgif.be/auth/openingkeytype/</dd>
+	</dl>
+	<br/>
+	<h4>SKOS TopConcepts</h4>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>URI</th>
+				<th>skos:prefLabel@en</th>
+				<th>skos:notation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>vbokt:R20mm</td>
+				<td>R 20 mm</td>
+				<td>R20mm</td>
+			</tr>
+			<tr>
+				<td>vbokt:R30mm</td>
+				<td>R 30 mm</td>
+				<td>R30mm</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="region region--no-space-top">
+	<h3 class="h3" id="PipeType">Pipe Type</h3>
+	<dl>
+		<dt>PREFIX vbpt:</dt>
+		<dd>http://vocab.belgif.be/auth/pipetype/</dd>
+	</dl>
+	<br/>
+	<h4>SKOS TopConcepts</h4>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>URI</th>
+				<th>skos:prefLabel@en</th>
+				<th>skos:notation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>vbpt:distributionPipe</td>
+				<td>distribution pipe</td>
+				<td>distributionPipe</td>
+			</tr>
+			<tr>
+				<td>vbpt:transportPipe</td>
+				<td>transport pipe</td>
+				<td>transportPipe</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="region region--no-space-top">
+	<h3 class="h3" id="Status">Status</h3>
+	<dl>
+		<dt>PREFIX vbs:</dt>
+		<dd>http://vocab.belgif.be/auth/status/</dd>
+	</dl>
+	<br/>
+	<h4>SKOS TopConcepts</h4>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>URI</th>
+				<th>skos:prefLabel@en</th>
+				<th>skos:notation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>vbs:operational</td>
+				<td>operational</td>
+				<td>operational</td>
+			</tr>
+			<tr>
+				<td>vbs:out-of-service</td>
+				<td>out of service</td>
+				<td>out-of-service</td>
+			</tr>
+			<tr>
+				<td>vbs:remark</td>
+				<td>remark</td>
+				<td>remark</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+{% endblock %}
