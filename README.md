@@ -1,1 +1,1 @@
-This is the ICEG thema repository for the thematic traject "Hydrant"
+ICEG thema repository for the thematic traject "Hydrant"
