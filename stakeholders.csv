@@ -1,4 +1,5 @@
 ﻿Voornaam;Naam;Affiliatie;E-mail;Website;Role
+Jitse;De Cock;PwC;;;E
 Florian;Barthelemy;PwC;;;E
 Christophe;Bahim;PwC;;;E
 Vincent;Feremans;PwC;;;E
@@ -28,7 +29,7 @@ Patrick;Gillaux;IDEN;;;C
 Philip;Stichelbaut;HVZ Fluvia;;;C
 Pierre;Guillaume;INBW (Intercommunale Brabant-Wallon);;;C
 Pieter;Derveaux;FOD IBZ;;;C
-Rink;Kruk;NGI;;;C
+Rink;Kruk;NGI;;;A
 Rudy;Declercq;HVZ Fluvia;;;C
 Soetkin;Vanassche;Brandweerzone Centrum Gent;;;C
 Tanja;Goethals;Brandweer Zone Centrum Gent;;;C

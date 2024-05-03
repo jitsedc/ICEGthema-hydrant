@@ -2,19 +2,19 @@
     {
         "name": "hydrant",
         "type": "ap",
-        "eap": "ICEG-Hydrant-AP-v09.eap",
+        "eap": "ICEG-Hydrant-AP-v10.eap",
         "diagram": "ICEG-Hydrant-AP",
         "template": "hydrant.j2",
         "title": "Hydrant",
         "publication-state": "Under public review",
-        "publication-date": "2023-12-05",
+        "publication-date": "2024-05-01",
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "contributors-file": "stakeholders.csv",
         "contributors-column": "Role",
         "site": "site-skeleton/hydrant",
         "repourl": "https://github.com/belgif/ICEGthema-hydrant/tree/main",
         "versionurl": "https://belgif.github.io/thematic/models/hydrant",
-        "feedbackurl": "https://github.com/belgif/ICEGthema-hydrant/issues",
+        "feedbackurl": "https://github.com/belgif/thematic/issues",
         "standaardregisterurl": "TODO"
     }
 ]
